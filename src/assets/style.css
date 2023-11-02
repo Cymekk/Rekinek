@@ -1,0 +1,28 @@
+@tailwind base;
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.title {
+		@apply font-bold text-[40px] text-[#C2D9FF] uppercase tracking-[3px] py-[32px] md:py-[64px] md:text-center md:text-[50px];
+	}
+
+	.text {
+		@apply text-[18px] text-white max-w-prose leading-[130%];
+	}
+
+	.section {
+		@apply container max-w-[1200px] px-[15px] lg:px-[25px];
+	}
+
+	.errorMsg {
+		@apply block mb-[32px] text-rose-600 font-medium text-center;
+	}
+}
